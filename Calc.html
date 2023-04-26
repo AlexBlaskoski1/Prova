@@ -23,6 +23,29 @@
         </ul>
       </nav>      
   </header>
+
+  <h1>Cadastrar nova compra</h1>
+	<form>
+		<label for="valor">Valor do Produto:</label>
+		<input type="number" id="valor" name="valor">
+		<label for="quantidade">Quantidade:</label>
+		<input type="number" id="quantidade" name="quantidade">
+		<label for="numero">Número da Compra:</label>
+		<input type="number" id="numero" name="numero">
+		<button type="button" onclick="adicionarCompra()">Adicionar Compra</button>
+	</form>
+	<table>
+		<thead>
+			<tr>
+				<th>Valor do Produto</th>
+				<th>Quantidade</th>
+				<th>Número da Compra</th>
+			</tr>
+		</thead>
+		<tbody id="compras">
+		</tbody>
+	</table>
+  <script src="scriptcal.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
